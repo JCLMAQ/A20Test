@@ -1,0 +1,12 @@
+<p>custom-sidenav works!</p>
+<mat-nav-list>
+  @for (item of menuItems(); track $index) {
+    <mat-list-item class="test">
+
+        <mat-icon matListItemIcon >{{ item.icon }}</mat-icon>
+        <span matListItemTitle >{{ item.label }}</span>
+
+    </mat-list-item>
+  }
+</mat-nav-list>
+<mat-divider></mat-divider>
